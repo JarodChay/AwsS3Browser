@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <h1>AWS S3 Browser</h1><br>
+        <label>Access Key ID</label>
+        <input id="accessKeyId"><br>
+        <label>Secret Access Key</label>
+        <input id="secretAccessKey"><br>
+        <label>Region Name</label>
+        <input id="regionName"><br>
+        <label>Bucket Name</label>
+        <input id="bucketName"><br>
+        <!-- https://s3-us-west-2.amazonaws.com/jarod.chay/Photos+%26+Videos/Family/2013-06+Wedding/20170315_102914.jpg -->
+        <button onclick="viewFolderContents('')">Load Folders Root</button>
+
+        <div id="app"></div>
+
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.291.0.min.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

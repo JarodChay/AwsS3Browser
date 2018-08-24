@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>AWS Browser</h1><br>
+        <label>Access Key ID</label>
+        <input id="accessKeyId"><br>
+        <label>Secret Access Key</label>
+        <input id="secretAccessKey"><br>
+        <label>Account ID</label>
+        <input id="accountId"><br>
+        <label>Region Name</label>
+        <input id="regionName"><br>
+        <label>Bucket Name</label>
+        <input id="bucketName"><br>
+        <label>Delimiter</label>
+        <input id="delimiter"><br>
+        <label>Prefix</label>
+        <input id="prefix"><br>
+
+        <button onclick="doStuff()">Do Stuff</button>
+
+        <button onclick="listAlbums()">List Albums</button>
+        <div id="app"></div>
+
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.291.0.min.js"></script>
+        <script src="scripts/explorer.js"></script>
+    </body>
+</html>
